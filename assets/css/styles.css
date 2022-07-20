@@ -19,7 +19,8 @@
   --second-hue: 219;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
+  /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -83,10 +84,13 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .4s; /* for light mode animation */
+  transition: .4s;
+  /* for light mode animation */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
 }
@@ -161,7 +165,7 @@ body.light-theme {
 .light-theme .active-work,
 .light-theme .footer__title,
 .light-theme .footer__link,
-.light-theme .footer__copy{
+.light-theme .footer__copy {
   color: var(--title-color);
 }
 
@@ -209,7 +213,7 @@ body.light-theme {
   padding: 4.5rem 0 1rem;
 }
 
-.section__title, 
+.section__title,
 .section__subtitle {
   text-align: center;
 }
@@ -234,7 +238,8 @@ body.light-theme {
   width: 100%;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
-  transition: .4s; /* for light mode animation */
+  transition: .4s;
+  /* for light mode animation */
 }
 
 .nav {
@@ -262,7 +267,8 @@ body.light-theme {
   border-radius: 4rem;
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
-  transition: .4s; /* for light mode animation */
+  transition: .4s;
+  /* for light mode animation */
 }
 
 .nav__list {
@@ -281,10 +287,9 @@ body.light-theme {
 
 /* Active link */
 .active-link {
-  background: linear-gradient(180deg, 
-              hsla(var(--first-hue), var(--sat), var(--lig), 1), 
-              hsla(var(--first-hue), var(--sat), var(--lig), .2)
-            );
+  background: linear-gradient(180deg,
+      hsla(var(--first-hue), var(--sat), var(--lig), 1),
+      hsla(var(--first-hue), var(--sat), var(--lig), .2));
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
   color: var(--title-color);
 }
@@ -305,7 +310,7 @@ body.light-theme {
   text-align: center;
 }
 
-.home__greeting, 
+.home__greeting,
 .home__education {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
@@ -334,10 +339,9 @@ body.light-theme {
   justify-self: center;
   width: 190px;
   height: 293px;
-  background: linear-gradient(180deg, 
-              hsla(var(--first-hue), var(--sat), var(--lig), 1), 
-              hsla(var(--first-hue), var(--sat), var(--lig), .2)
-            );
+  background: linear-gradient(180deg,
+      hsla(var(--first-hue), var(--sat), var(--lig), 1),
+      hsla(var(--first-hue), var(--sat), var(--lig), .2));
   border-radius: 10rem 10rem 1rem 1rem;
   display: flex;
   align-items: flex-end;
@@ -352,7 +356,7 @@ body.light-theme {
   gap: 1.5rem;
 }
 
-.home__social, 
+.home__social,
 .home__scroll {
   position: absolute;
 }
@@ -478,6 +482,7 @@ body.light-theme {
 .skills__container {
   row-gap: 2rem;
   padding-top: 1rem;
+  display: flex;
 }
 
 .skills__content {
@@ -582,7 +587,7 @@ body.light-theme {
   border-radius: 1.5rem;
 }
 
-.services__modal-title, 
+.services__modal-title,
 .services__modal-description {
   text-align: center;
 }
@@ -758,7 +763,7 @@ body.light-theme {
   margin-bottom: .25rem;
 }
 
-.contact__card-title, 
+.contact__card-title,
 .contact__card-data {
   font-size: var(--small-font-size);
 }
@@ -838,7 +843,7 @@ body.light-theme {
   padding: 2rem 0 6rem;
 }
 
-.footer__title, 
+.footer__title,
 .footer__link {
   color: var(--body-color);
 }
@@ -904,10 +909,12 @@ body.light-theme {
   .home__buttons {
     flex-direction: column;
   }
+
   .home__handle {
     width: 150px;
     height: 253px;
   }
+
   .home__img {
     width: 130px;
   }
@@ -919,6 +926,7 @@ body.light-theme {
   .skills__box {
     column-gap: 1rem;
   }
+
   .skills__name {
     font-size: var(--small-font-size);
   }
@@ -931,6 +939,7 @@ body.light-theme {
   .work__item {
     font-size: var(--small-font-size);
   }
+
   .work__filters {
     column-gap: .25rem;
   }
@@ -949,6 +958,7 @@ body.light-theme {
     grid-template-columns: repeat(3, 140px);
     justify-content: center;
   }
+
   .about__description {
     padding: 0 5rem;
   }
@@ -956,6 +966,7 @@ body.light-theme {
   .skills__container {
     justify-content: center;
   }
+
   .skills__content {
     padding: 2rem 4rem;
   }
@@ -964,10 +975,12 @@ body.light-theme {
     grid-template-columns: repeat(2, 160px);
     justify-content: center;
   }
+
   .services__modal-content {
     width: 500px;
     padding: 4.5rem 2.5rem 2.5rem;
   }
+
   .services__modal-description {
     padding: 0 3.5rem;
   }
@@ -975,6 +988,7 @@ body.light-theme {
   .work__container {
     justify-content: center;
   }
+
   .work__img {
     width: 295px;
   }
@@ -983,6 +997,7 @@ body.light-theme {
     grid-template-columns: 300px;
     justify-content: center;
   }
+
   .contact__form {
     width: 360px;
     margin: 0 auto;
@@ -1009,8 +1024,9 @@ body.light-theme {
   }
 
   .section {
-    padding: 6.5rem  0 1rem;
+    padding: 6.5rem 0 1rem;
   }
+
   .section__title {
     margin-bottom: 3.5rem;
   }
@@ -1023,16 +1039,20 @@ body.light-theme {
     width: 290px;
     height: 400px;
   }
+
   .home__img {
     width: 220px;
   }
+
   .home__social-link {
     padding: .4rem;
     font-size: 1.25rem;
   }
+
   .home__social::after {
     transform: rotate(90deg) translate(16px, 0);
   }
+
   .home__scroll-icon {
     font-size: 2rem;
   }
@@ -1042,19 +1062,24 @@ body.light-theme {
     align-items: center;
     column-gap: 4rem;
   }
+
   .about__img {
     width: 350px;
   }
+
   .about__data {
     text-align: initial;
   }
+
   .about__info {
     justify-content: initial;
   }
+
   .about__box {
     text-align: center;
     padding: 1rem 1.25rem;
   }
+
   .about__description {
     padding: 0 4rem 0 0;
     margin-bottom: 2.5rem;
@@ -1069,6 +1094,7 @@ body.light-theme {
     grid-template-columns: repeat(3, 192px);
     column-gap: 3rem;
   }
+
   .services__card {
     padding: 5rem 2rem 1.5rem;
   }
@@ -1076,12 +1102,15 @@ body.light-theme {
   .work__container {
     gap: 3rem;
   }
+
   .work__card {
     padding: 1.25rem;
   }
+
   .work__img {
     margin-bottom: 1rem;
   }
+
   .work__title {
     margin-bottom: .5rem;
   }
@@ -1089,6 +1118,7 @@ body.light-theme {
   .testimonial__container {
     width: 750px;
   }
+
   .testimonial__card {
     padding: 1.5rem 2rem;
   }
