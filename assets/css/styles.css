@@ -438,7 +438,8 @@ body.light-theme {
 }
 
 .about__img {
-  width: 220px;
+  width: 300px;
+  height: 450px;
   border-radius: 1.5rem;
   justify-self: center;
 }
